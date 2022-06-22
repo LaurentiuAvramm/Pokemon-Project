@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <style>
+
+body {
+    background-color: orangered;
+    color: #222;
+    margin: 0;
+}
+
+.container {
+    padding: 40px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 54px;
+}
+
+#pokedex {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 20px;
+    padding-inline-start: 0;
+}
+
+.card {
+    
+    background-color: #f4f4f4;
+    color:black;
+    text-align: center;
+}
+
+.ability{
+    border-style: solid;
+    border-width: 5px 20px;
+}
+
+.card-title {
+    text-transform: capitalize;
+    margin-bottom: 0px;
+    font-size: 35px;
+    font-weight: normal;
+}
+.card-subtitle {
+    text-transform: capitalize;
+    margin-top: 5px;
+    color: grey;
+    font-weight: lighter;
+}
+
+.card-subtitle-height {
+  height: 100px;
+  width: 120px;
+  border-radius: 70%;
+  background: red; 
+  margin-left: 30px;
+  display: grid;
+  place-items: center;
+}
+
+.card-subtitle-weight {
+  height: 100px;
+  width: 120px;
+  border-radius: 70%;
+  background: blue; 
+  margin-left: 30px;
+  display: grid;
+  place-items: center;
+}
+
+.display {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Pokedex</h1>
+        <ol id="pokedex"></ol>
+    </div>
+    <script src="pokemon2.js"></script>
+    
+</body>
+</html>
